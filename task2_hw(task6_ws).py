@@ -9,9 +9,10 @@
 
 class Rectangle:
     """ Класс Архив"""
+
     def __init__(self,
-        length_cm: float,
-        width_cm: float = None) -> None:
+                 length_cm: float,
+                 width_cm: float = None) -> None:
         """ конструктора класса 
 
         :param length_cm: длина прямоугольника
@@ -38,9 +39,8 @@ class Rectangle:
 
         :return: периметр 2х треуголтников
         """
-        return Rectangle(length_cm=
-        (self.length + other.length),
-        width_cm=self.width)
+        return Rectangle(length_cm=(self.length + other.length),
+                         width_cm=self.width)
 
     def __sub__(self, other):
         """ Вычетание 2х прямоугольников
@@ -49,9 +49,8 @@ class Rectangle:
 
         :return: периметр 2х треуголтников
         """
-        return Rectangle(length_cm=
-        abs(self.length - other.length),
-        width_cm=self.width)
+        return Rectangle(length_cm=abs(self.length - other.length),
+                         width_cm=self.width)
 
     def __eq__(self, other: "Rectangle"):
         """ сравнение 2х прямоугольников на равенство
@@ -106,7 +105,7 @@ class Rectangle:
 
 if __name__ == '__main__':
     r1 = Rectangle(length_cm=2,
-    width_cm=2)
+                   width_cm=2)
     print(f'{r1.calc_len() = }')
     print(f'{r1.calc_square() = }')
     print('---')
@@ -125,7 +124,6 @@ if __name__ == '__main__':
     print(r1 <= r2)
     print(r1 >= r2)
 
-
-    print (Rectangle.__doc__)
-    print (r1.__doc__)
-    print (r1.__eq__.__doc__)
+    print(Rectangle.__doc__)
+    print(r1.__doc__)
+    print(r1.__eq__.__doc__)

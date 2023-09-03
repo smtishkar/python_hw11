@@ -34,8 +34,6 @@ if __name__ == "__main__":
     print(str1.name)
     print(str1.time_create)
 
-    print (MyStr.__doc__)
-    print (str1.__doc__)
-    print (str1.__repr__.__doc__)
-
-    
+    print(MyStr.__doc__)
+    print(str1.__doc__)
+    print(str1.__repr__.__doc__)

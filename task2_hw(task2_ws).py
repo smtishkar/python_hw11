@@ -6,6 +6,7 @@
 list-архивы также являются свойствами экземпляра
 '''
 
+
 class Archiv:
     """ Класс Архив"""
     instance = None
@@ -48,7 +49,6 @@ if __name__ == "__main__":
     print(a3.text)
     print(a3.number)
 
-
-    print (Archiv.__doc__)
-    print (a1.__doc__)
-    print (a1.__init__.__doc__)
+    print(Archiv.__doc__)
+    print(a1.__doc__)
+    print(a1.__init__.__doc__)
